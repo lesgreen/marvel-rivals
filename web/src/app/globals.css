@@ -1,0 +1,121 @@
+:root {
+  color-scheme: light;
+  --bg: #f2f6ff;
+  --paper: #ffffff;
+  --text: #1a1f2e;
+  --muted: #4a536a;
+  --primary: #0052cc;
+  --primary-dark: #003b96;
+  --border: #d8e0f0;
+  --error: #b31942;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top right, #d9e6ff 0%, transparent 40%),
+    radial-gradient(circle at bottom left, #d9f8ff 0%, transparent 45%),
+    var(--bg);
+  min-height: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(17, 33, 68, 0.08);
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.65rem 0.9rem;
+  background: linear-gradient(135deg, var(--primary), #0074e6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--error);
+  margin: 0.5rem 0 0;
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+pre {
+  margin: 0;
+  overflow-x: auto;
+  background: #0f1523;
+  color: #ecf1ff;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+}
+
+code {
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+}

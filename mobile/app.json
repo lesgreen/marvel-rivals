@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Marvel Rivals Mobile",
+    "slug": "marvel-rivals-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#eff4ff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#eff4ff"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
